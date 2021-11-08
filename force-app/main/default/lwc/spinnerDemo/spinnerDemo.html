@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Reusable Spinner Demo">
+        <lightning-button class="slds-p-left_medium" label="Show Spinner" variant="brand" onclick={spinnerHandler}></lightning-button>
+
+        <template if:true={showSpinner}>
+            <c-spinner help-text="Loading..." 
+            size="medium" 
+            variant="brand" 
+            show-spinner={showSpinner}></c-spinner>
+        </template>
+    </lightning-card>
+</template>
